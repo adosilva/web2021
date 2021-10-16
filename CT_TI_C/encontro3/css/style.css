@@ -98,11 +98,16 @@
 .novidades h2{
     color: #fff;
     font-size: 26px;
-    width: ;
+    width: 70%;
 }
 .novidades p{
     color: #fff;
 }
 .novidades a{
-    
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: violet;
+    padding: 6px 12px;
+    background-color: #fff;
+    font-weight: 400;
 }
