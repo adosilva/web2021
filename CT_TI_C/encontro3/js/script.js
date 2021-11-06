@@ -1,21 +1,35 @@
-$(document).ready(function() {
-    $("body").on('click', '.topo', function() {
-        $("nav.menu").toggleClass("exibe_menu");
-    });
-});
+class MobileNavBar {
+    constructor(mobileMenu, navList, navLinks) {
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = "active";
+        
+        this.handleClick = this.handleClick.bind(this);
+    }
 
+    animatedLinks() {
+        this.navLinks.forEach((link, index) => {
+            link.style.animation
+            ? (link.style.animation = "")
+            : (link.style.animation = `navLinkFade 0.5s ease forwards $ {
+                index / 7 + 0.3
+            }s`);
+        });
+    }
 
-/* $("body").on('click', '.icone_exibir', function(event) {
-    event.preventDefault();
-    $(".barra_lateral").toggleClass("exibir_conteúdo");
-        $(".icone_exibir").css('display','none');
-    $(".icone_ocultar").css('display','none');
-});
-
-$("body").on('click', '.icone_ocultar', function(event) {
-    event.preventDefault();
-    $(".barra_lateral").toggleClass("exibir_conteúdo");
-        $(".icone_exibir").css('display','block');
-    $(".icone_ocultar").css('display','none');
-}); */
-
+handleClick() {
+    this.navList.classList.toggle(this.activeClass);
+    this.mobileMenu.classList.toggle(this.activeClass);
+    this.animatedLinks();
+}
+addClickEvent() {
+    this.mobileMenu.addEventListener("click", this.handleClick);
+}
+init() {
+    if (this.mobileMenu) {
+        this.addClickEvent();
+    }
+    return this;
+}
+}
