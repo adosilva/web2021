@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/i3_style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>Meu primeiro site!</title>
 </head>
 <body>
 
-    <header>
-        <a class="navbar-brand" href="index.html"><img src="img/senai_small.jpg"></a>
-    <nav>        
-            <ul>
+    <header id="header">
+        <a id="logo" href="index.html"><img src="img/senai_small.jpg"></a>
+    <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>        
+            <ul id="menu" role="menu">
                 <li><a class="" href="jogos.html">Jogos</a></li>
                 <li><a class="" href="hardware.html">Hardware</a></li>
                 <li><a class="" href="celulares.html">Celulares</a></li>
@@ -27,19 +30,6 @@
     </nav>
 </header>
     
-    <header>
-        <nav class="menu_top">
-            <img class="img-logo" src="img/senai_small.jpg" alt="Logo Senai">
-            <ul class="menu">
-                <a class="linkMenu" href="">Jogos</a>
-                <a class="linkMenu" href="hardware.hmtl">Hardware</a>
-                <a class="linkMenu" href="celulares.html">Celulares</a>
-                <a class="linkMenu" href="pc-gamer.hmtl">PC Gamer</a>
-                <a class="linkMenu" href="contato.html">Contato</a>
-                <a class="linkMenu login" href="login.html">Login</a>
-            </ul>
-        </nav>
-    </header>
         <!-- início carousel página principal-->
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -306,6 +296,8 @@
 </body>
 
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+<script src="js/i3_menu.js"></script>
 
 </html>
 
