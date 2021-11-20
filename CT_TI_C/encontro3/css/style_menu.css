@@ -11,9 +11,13 @@ a {
 a:hover {
     background: rgba(0, 0, 0, 0.05);
 }
-#logo {
-    font-size: 1.5rem;
-}
+#logo img{
+    float: left;
+    height: 35px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    }
 #header {
     width: 100%;
     position: fixed; /* Adicionado Position e Z-Index */
