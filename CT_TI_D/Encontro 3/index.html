@@ -10,52 +10,25 @@
     <title>Meu primeiro site!</title>
 </head>
 <body>
-
-    <header>
-    <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth">
-        <a class="navbar-brand" href="index.html"><img src="img/senai_small.jpg"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-iten active">
-                    <a class="nav-link" href="jogos.html">Jogos <span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="hardware.html">Hardware</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="celulares.html">Celulares</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pc-gamer.hmtl">PC Gamer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contato.html">Contato</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html"">Login</a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-</header>
-    
-    <header>
-        <nav class="menu_top">
-            <img class="img-logo" src="img/senai_small.jpg" alt="Logo Senai">
-            <ul class="menu">
-                <a class="linkMenu" href="">Jogos</a>
-                <a class="linkMenu" href="hardware.hmtl">Hardware</a>
-                <a class="linkMenu" href="celulares.html">Celulares</a>
-                <a class="linkMenu" href="pc-gamer.hmtl">PC Gamer</a>
-                <a class="linkMenu" href="contato.html">Contato</a>
-                <a class="linkMenu login" href="login.html">Login</a>
-            </ul>
-        </nav>
+<!-- início menu responsivo -->
+    <header id="header">
+        <a id="logo" href="index.html"><img src="img/senai_small.jpg" alt="Logo Senai"></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a class="linkMenu" href="jogos.html">Jogos</a></li>
+                    <li><a class="linkMenu" href="hardware.html">Hardware</a></li>
+                    <li><a class="linkMenu" href="celulares.html">Celulares</a></li>
+                    <li><a class="linkMenu" href="pc-gamer.html">PC Gamer</a></li>
+                    <li><a class="linkMenu" href="contato.html">Contato</a></li>
+                    <li><a class="linkMenu" href="login.html">Login</a></li>
+                </ul>
+            </nav>
     </header>
+  
+    <!-- fim menu responsivo -->
         <!-- início carousel página principal-->
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -99,7 +72,7 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
+       </div>
           <!-- fim carousel página -->
         
         <div class="section-banner-home">
@@ -322,6 +295,7 @@
 </body>
 
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/script_menu.js"></script>
 
 </html>
 
