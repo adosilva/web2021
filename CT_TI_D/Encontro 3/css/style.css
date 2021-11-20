@@ -16,6 +16,8 @@ a:hover {
 }
 #header {
     width: 100%;
+    position: fixed; /* Adicionado Position e Z-Index */
+    z-index: 90;
     box-sizing: border-box;
     height: 70px;
     padding: 0px;
@@ -23,8 +25,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     background: #e7e7e7;
-    position: fixed; /* Adiconado Position e Z-Index */
-    z-index: 90;
+   
 }
 #menu {
     display: flex;
